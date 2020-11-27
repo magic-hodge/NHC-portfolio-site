@@ -26,8 +26,7 @@ h3 {
   border-radius: .25rem;
   background-color: #1e2022;
   color: #c9d6df;
-  transition: 0.5s ease;
-  box-shadow: 2px 2px;
+  transition: 0.3s ease;
 }
 
 .message-button:hover {

@@ -58,6 +58,10 @@ p {
   line-height: 1.6;
 }
 
+.card p {
+  width: 100%; 
+}
+
 hr {
   border: dotted 6px;
   border-bottom: none;
@@ -74,6 +78,10 @@ hr {
       width: 75%;
   }
 
+  .card p {
+      width: 100%; 
+  }
+
   hr {
       width: 10%;
       margin: 25px auto;
@@ -87,6 +95,10 @@ hr {
   
   p {
       width: 75%;
+  }
+
+  .card p {
+    width: 100%; 
   }
 
   hr {

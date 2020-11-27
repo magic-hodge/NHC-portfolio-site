@@ -2,6 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import HeadSupport from '../images/head_support_width.jpg';
+import WrapPose from '../images/wrap_pose1.jpg';
+
 
 
 const Disciplines = styled.div`
@@ -12,16 +16,37 @@ const Disciplines = styled.div`
 
     .card {
         background-color: #1e2022;
-        color: #f0f5f9;
+        color: #c9d6df;
+        
     }
 
-    .card-link {
-        margin: 0 auto;
-        padding: 45px;
+    .card-body {
     }
 
-    .card-link:hover {
-        color:
+    .btn {
+        margin: .5rem 3rem;
+        background-color: #1e2022;
+        color: #c9d6df;
+        border: 1px solid #c9d6df;
+        transition: 0.3s ease;
+        width: 30%;
+    }
+
+    .btn:hover {
+        background-color: #c9d6df;
+        color: #1e2022;   
+    }
+
+    @media screen and (max-width:768px) {
+        .btn {
+            margin: .5rem 2rem;
+        }
+    }
+
+    @media screen and (max-width:1024px) {
+        .btn {
+            margin: .5rem 1.5rem;
+        }
     }
 `;
 
@@ -32,28 +57,32 @@ function DisciplinesBlock() {
                 Disciplines.
             </h3>
             <CardDeck>
-                <Card style={{ width: '22.5rem' }}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
+                <Card style={{ width: '22.5rem'}}>
+                    <Card.Img variant="top" src={HeadSupport} />
                     <Card.Body>
                         <Card.Title>Cyr Wheel</Card.Title>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card's content.
                         </Card.Text>
-                        <Card.Link href="#">Photos</Card.Link>
-                        <Card.Link href="#">Videos</Card.Link>
+                        <div className="text-center">
+                        <Button href="#photos">Photos</Button>
+                        <Button href="#videos">Videos</Button>
+                        </div>
                     </Card.Body>
                 </Card>
-                <Card style={{ width: '22.5rem' }}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
+                <Card>
+                    <Card.Img variant="top" src={WrapPose} />
                     <Card.Body>
                         <Card.Title>Aerial Rope</Card.Title>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card's content.
                         </Card.Text>
-                        <Card.Link href="#">Photos</Card.Link>
-                        <Card.Link href="#">Videos</Card.Link>
+                        <div className="text-center">
+                        <Button href="#photos">Photos</Button>
+                        <Button href="#videos">Videos</Button>
+                        </div>
                     </Card.Body>
                 </Card>
             </CardDeck>
