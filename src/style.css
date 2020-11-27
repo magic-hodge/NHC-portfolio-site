@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Theme Colors. */
+
+.nhc-color-1 {
+  color: #f0f5f9;
+}
+
+.nhc-bg-color-1 {
+  background-color: #f0f5f9;
+}
+
+.nhc-color-2 {
+  color: #c9d6df;
+}
+
+.nhc-bg-color-2 {
+  background-color: #c9d6df;
+}
+
+.nhc-color-3 {
+  color: #52616b;
+}
+
+.nhc-bg-color-3 {
+  background-color: #52616b;
+}
+
+.nhc-color-4 {
+  color: #1e2022;
+}
+
+.nhc-bg-color-4 {
+  background-color: #1e2022;
+}
+
+/* General Elements */
+
+h3 {
+  margin: 20px auto;
+  font-size: 2rem;
+}
+
+h4 {
+  width: 50%;
+  margin: 20px auto;
+  font-size: 1.35rem;
+}
+
+p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+hr {
+  border: dotted 6px;
+  border-bottom: none;
+  width: 5%;
+  margin: 50px auto;
+}
+
+@media screen and (max-width:768px) {
+  h4 {
+      width: 75%;
+  }
+  
+  p {
+      width: 75%;
+  }
+
+  hr {
+      width: 10%;
+      margin: 25px auto;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  h4 {
+      width: 75%;
+  }
+  
+  p {
+      width: 75%;
+  }
+
+  hr {
+      width: 10%;
+      margin: 25px auto;
+  }
+}
+
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1e2022;
+  color: #52616b;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+
+.footer .fab:hover,
+.footer .fas:hover {
+  color: #c9d6df;
+}
+
